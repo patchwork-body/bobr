@@ -1,9 +1,11 @@
 {
-  "name": "bobr",
+  "name": "@bobr/cli",
   "type": "module",
   "version": "0.0.1",
   "description": "cli tool for code generation",
-  "bin": "bin/index.js",
+  "bin": {
+    "bobr": "bin/index.js"
+  },
   "scripts": {
     "test": "vitest",
     "coverage": "vitest --coverage",
@@ -43,5 +45,6 @@
     "@types/node": "^18.11.18",
     "toml": "^3.0.0",
     "yargs": "^17.6.2"
-  }
+  },
+  "main": "index.js"
 }

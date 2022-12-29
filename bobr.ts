@@ -10,7 +10,14 @@ import path from 'node:path';
 import {pino} from 'pino';
 import chalk from 'chalk';
 
-const logger = pino({})
+const logger = pino({
+  transport: {
+    target: 'pino-pretty',
+    options: {
+      colorize: true
+    },
+  },
+});
 
 const attributeType = {
   string: 'AttributeType.STRING',

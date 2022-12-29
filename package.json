@@ -1,10 +1,10 @@
 {
   "name": "@patchwork-body/bobr-cli",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cli tool for code generation",
   "bin": {
-    "bobr": "bin/index.js"
+    "bobr": "bin/bobr.js"
   },
   "scripts": {
     "test": "vitest",
@@ -44,5 +44,5 @@
     "toml": "^3.0.0",
     "yargs": "^17.6.2"
   },
-  "main": "index.js"
+  "main": "bobr.ts"
 }

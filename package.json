@@ -1,7 +1,7 @@
 {
   "name": "@patchwork-body/bobr-cli",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "cli tool for code generation",
   "bin": {
     "bobr": "bin/bobr.js"

@@ -24,7 +24,7 @@ const attributeType = {
 };
 const utils = {
     tableEntires: (bobrFile) => Object.entries(bobrFile.dynamodb.table),
-    lambdaEntires: (bobrFile) => Object.entries(bobrFile.lambda).map(([url, config]) => [url, Object.assign(Object.assign(Object.assign({}, config), { methods: config.methods.map((method) => method.toUpperCase()) }), {
+    lambdaEntires: (bobrFile) => Object.entries(bobrFile.lambda).map(([url, config]) => [url, Object.assign(Object.assign({}, config), {
             path: config.handler.split('/').slice(0, -1).join('/'),
             handler: config.handler.split('.').at(-1),
         })]),

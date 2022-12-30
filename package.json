@@ -1,7 +1,7 @@
 {
   "name": "@patchwork-body/bobr-cli",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "cli tool for code generation",
   "bin": {
     "bobr": "bin/bobr.js"
@@ -29,17 +29,14 @@
     "url": "https://github.com/patchwork-body/bobr/issues"
   },
   "homepage": "https://github.com/patchwork-body/bobr#readme",
-  "devDependencies": {
+  "dependencies": {
     "@types/yargs": "^17.0.17",
     "chalk": "^4.1.2",
-    "constructs": "^10.1.202",
     "pino": "^8.8.0",
     "pino-pretty": "^9.1.1",
     "tiny-invariant": "^1.3.1",
     "ts-morph": "^17.0.1",
-    "typescript": "^4.9.4"
-  },
-  "dependencies": {
+    "typescript": "^4.9.4",
     "@types/node": "^18.11.18",
     "toml": "^3.0.0",
     "yargs": "^17.6.2"

@@ -34,7 +34,7 @@ const utils = {
   lambdaEntires: (bobrFile: any) => Object.entries<{
     handler: string,
     methods: string[],
-  }>(bobrFile.lambda).map(([url, config]) => [url, {...config, methods: config.methods.map((method: string) => method.toUpperCase()), ...{
+  }>(bobrFile.lambda).map(([url, config]) => [url, {...config, ...{
     path: config.handler.split('/').slice(0, -1).join('/'),
     handler: config.handler.split('.').at(-1),
   } }] as const),
